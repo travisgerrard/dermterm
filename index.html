@@ -23,7 +23,8 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid"
+        id="primaryLesion">
         <h1>Primary Lesion</h1>
         <span data-toggle="button"
             data-target="#id">
@@ -31,7 +32,8 @@
             class="btn btn-default"
             data-toggle="tooltip"
             data-placement="bottom"
-            title="A small flat, nonpalpable lesion < 1cm">Macule
+            title="A small flat, nonpalpable lesion < 1cm"
+            data-name="Macule">Macule
           </button>
         <button type="button"
             class="btn btn-default"
@@ -170,11 +172,18 @@
         </span>
     </div>
 
+    <div class="container">
+        <h3>Output</h4>
+        <div class="textArea">
+            <textarea class="form-control" id="outputText"
+                rows="3"></textarea>
+        </div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
